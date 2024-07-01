@@ -6,6 +6,10 @@ img{
     width: 100%;
 }
 
+.grid{
+    display: flex;
+}
+
 @media screen and (min-width: 1024px) {
     img{
         width: 50%;
