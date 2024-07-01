@@ -7,7 +7,8 @@ img{
 }
 
 .grid{
-    display: flex;
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
 }
 
 @media screen and (min-width: 1024px) {
