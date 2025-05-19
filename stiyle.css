@@ -1,21 +1,74 @@
-body{
-    background-color: #efe8e0;
-}
-
-img{
-    width: 100%;
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: 40% 20% 40%;
-}
-
-@media screen and (min-width: 1024px) {
-    img{
-        width: 50%;
-    }
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura Espacial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Aventura Espacial</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href=" #inicio">Início</a></li>
+                <li><a href=" #explore">Explorar</a></li>
+                <li><a href=" #sobre">Sobre</a></li>
+                <li><a href=" #contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
     
-}
+    <section id="inicio">
+        <div class="hero">
+            <h2>Embarque em uma jornada pelo cosmos!</h2>
+            <p>Descubra novos planetas e explore as maravilhas do espaço.</p>
+        </div>
+    </section>
 
-  
+    <section id="explore">
+        <h2>Explore o Universo</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Planeta X</h3>
+                <p>Um planeta misterioso e cheio de segredos.</p>
+            </div>
+            <div class="card">
+                <h3>Lua de Júpiter</h3>
+                <p>Uma lua cheia de crateras e aventuras.</p>
+            </div>
+            <div class="card">
+                <h3>Estrela Alpha</h3>
+                <p>Uma estrela distante com uma luz cintilante.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre a Aventura Espacial</h2>
+        <p>Somos uma equipe de exploradores espaciais apaixonados por descobrir novos mundos e levar você junto nessa jornada!</p>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form action="#" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Aventura Espacial | Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

@@ -1,46 +1,169 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="stiyle.css">
-  <title>canva</title>
-</head>
+/* Corpo do site */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #0d1b2a;
+    color: white;
+}
 
-<body>
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #1f3b4d;
+    border-bottom: 3px solid #2c5371;
+}
 
-  <header>
-    <h1>Saneamento Básico Rural</h1>
-  </header>
+header .logo h1 {
+    font-size: 2.5rem;
+    color: #f5a623;
+}
 
-  <section>
-    <h2>*Início *Informações *Imagens</h2>
-    <img src="image 1 (1).png"
-    <div class="grid">
-      <h2>Segundo a Organização das Nações Unidas para a Agricultura e Alimentação (FAO), a agricultura de base familiar
-      reúne 14 milhões de pessoas, mais de 60% do total de agricultores, e detém 75% dos estabelecimentos agrícolas no
-      Brasil.</h2>
-      <img src="image 3 (1).png">
+header nav ul {
+    display: flex;
+    list-style-type: none;
+}
 
-      <img src="image 2 (1).png"
-    
-    </div>
-    <img src="saneamento-rural-678x381.jpg">
-    <h3>Saneamento básico rural consiste basicamente na coleta e tratamento do esgoto sanitário, no abastecimento de
-      água
-      para consumo humano, no tratamento e reuso de efluentes para a produção e no manejo e destinação do lixo (resíduos
-      sólidos) nas propriedades.
-      É comum nos estabelecimentos agrícolas o uso de fossas rudimentares (fossa "negra", poço, buraco, etc.), que
-      contaminam águas subterrâneas e, consequentemente, os poços de água, os conhecidos poços "caipiras". Assim, há a
-      possibilidade de contaminação dessa população, por doenças veiculadas pela urina, fezes e água, como hepatite,
-      cólera, salmonelose, verminoses, entre outras.
-      A ampliação dos serviços de saneamento básico, especialmente no que diz respeito ao aumento de domicílios
-      abastecidos com água de qualidade, é fundamental para a saúde e, em particular, para redução da mortalidade
-      infantil.
-    </h3>
-  </section>
+header nav ul li {
+    margin: 0 15px;
+}
 
+header nav ul li a {
+    text-decoration: none;
+    color: #f5a623;
+    font-size: 1.2rem;
+}
+
+/* Seção inicial (Hero) */
+#inicio {
+    background: url('https://source.unsplash.com/1600x900/?space') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#inicio h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#inicio p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Seção de explorar */
+#explore {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#explore h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background: #2c5371;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+}
+
+/* Seção sobre */
+#sobre {
+    background: #1f3b4d;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    font-size: 1.2rem;
+}
+
+/* Seção de contato */
+#contato {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background: #f5a623;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #f78e14;
+}
+
+/* Rodapé */
+footer {
+    background: #1f3b4d;
+    color: #f5a623;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 
   <footer>
 
