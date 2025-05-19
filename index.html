@@ -1,173 +1,60 @@
-/* Resetando estilos padrão */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Corpo do site */
-body {
-    font-family: 'Arial', sans-serif;
-    background: #0d1b2a;
-    color: white;
-}
-
-/* Cabeçalho */
-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background: #1f3b4d;
-    border-bottom: 3px solid #2c5371;
-}
-
-header .logo h1 {
-    font-size: 2.5rem;
-    color: #f5a623;
-}
-
-header nav ul {
-    display: flex;
-    list-style-type: none;
-}
-
-header nav ul li {
-    margin: 0 15px;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #f5a623;
-    font-size: 1.2rem;
-}
-
-/* Seção inicial (Hero) */
-#inicio {
-    background: url('https://source.unsplash.com/1600x900/?space') no-repeat center center;
-    background-size: cover;
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-#inicio h2 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-#inicio p {
-    font-size: 1.5rem;
-    margin-top: 10px;
-}
-
-/* Seção de explorar */
-#explore {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#explore h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.cards {
-    display: flex;
-    justify-content: space-around;
-}
-
-.card {
-    background: #2c5371;
-    padding: 20px;
-    width: 30%;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 1rem;
-}
-
-/* Seção sobre */
-#sobre {
-    background: #1f3b4d;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#sobre h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-#sobre p {
-    font-size: 1.2rem;
-}
-
-/* Seção de contato */
-#contato {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-#contato h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-form input, form textarea {
-    padding: 10px;
-    width: 80%;
-    max-width: 600px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-}
-
-form button {
-    background: #f5a623;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background: #f78e14;
-}
-
-/* Rodapé */
-footer {
-    background: #1f3b4d;
-    color: #f5a623;
-    text-align: center;
-    padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-  <footer>
-
-  </footer>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Melhor Site do Mundo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Super Site</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="changePage('home')">Início</a></li>
+                <li><a href="#" onclick="changePage('sobre')">Sobre</a></li>
+                <li><a href="#" onclick="changePage('servicos')">Serviços</a></li>
+                <li><a href="#" onclick="changePage('contato')">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="main-content">
+        <section id="home">
+            <h2>Bem-vindo ao Super Site</h2>
+            <p>Explore o melhor site com design moderno e incrível!</p>
+        </section>
+        
+        <section id="sobre" class="hidden">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma equipe dedicada a criar experiências únicas na web, utilizando as melhores tecnologias.</p>
+        </section>
+        
+        <section id="servicos" class="hidden">
+            <h2>Nossos Serviços</h2>
+            <ul>
+                <li>Desenvolvimento Web</li>
+                <li>Design de Interfaces</li>
+                <li>Consultoria de UX/UI</li>
+            </ul>
+        </section>
+        
+        <section id="contato" class="hidden">
+            <h2>Contato</h2>
+            <form>
+                <input type="text" placeholder="Seu nome" required>
+                <input type="email" placeholder="Seu e-mail" required>
+                <textarea placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Super Site | Todos os direitos reservados</p>
+    </footer>
 </body>
-
 </html>
