@@ -3,58 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O Melhor Site do Mundo</title>
+    <title>Aventura Espacial</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <h1>Super Site</h1>
+            <h1>Aventura Espacial</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="#" onclick="changePage('home')">Início</a></li>
-                <li><a href="#" onclick="changePage('sobre')">Sobre</a></li>
-                <li><a href="#" onclick="changePage('servicos')">Serviços</a></li>
-                <li><a href="#" onclick="changePage('contato')">Contato</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#explore">Explorar</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
     
-    <main id="main-content">
-        <section id="home">
-            <h2>Bem-vindo ao Super Site</h2>
-            <p>Explore o melhor site com design moderno e incrível!</p>
-        </section>
-        
-        <section id="sobre" class="hidden">
-            <h2>Sobre Nós</h2>
-            <p>Somos uma equipe dedicada a criar experiências únicas na web, utilizando as melhores tecnologias.</p>
-        </section>
-        
-        <section id="servicos" class="hidden">
-            <h2>Nossos Serviços</h2>
-            <ul>
-                <li>Desenvolvimento Web</li>
-                <li>Design de Interfaces</li>
-                <li>Consultoria de UX/UI</li>
-            </ul>
-        </section>
-        
-        <section id="contato" class="hidden">
-            <h2>Contato</h2>
-            <form>
-                <input type="text" placeholder="Seu nome" required>
-                <input type="email" placeholder="Seu e-mail" required>
-                <textarea placeholder="Sua mensagem" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
-    
+    <section id="inicio">
+        <div class="hero">
+            <h2>Embarque em uma jornada pelo cosmos!</h2>
+            <p>Descubra novos planetas e explore as maravilhas do espaço.</p>
+        </div>
+    </section>
+
+    <section id="explore">
+        <h2>Explore o Universo</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Planeta X</h3>
+                <p>Um planeta misterioso e cheio de segredos.</p>
+            </div>
+            <div class="card">
+                <h3>Lua de Júpiter</h3>
+                <p>Uma lua cheia de crateras e aventuras.</p>
+            </div>
+            <div class="card">
+                <h3>Estrela Alpha</h3>
+                <p>Uma estrela distante com uma luz cintilante.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre a Aventura Espacial</h2>
+        <p>Somos uma equipe de exploradores espaciais apaixonados por descobrir novos mundos e levar você junto nessa jornada!</p>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form action="#" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Super Site | Todos os direitos reservados</p>
+        <p>&copy; 2025 Aventura Espacial | Todos os direitos reservados</p>
     </footer>
 </body>
 </html>

@@ -1,33 +1,34 @@
-/* Resetando alguns estilos padrão */
+/* Resetando estilos padrão */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo e estilo geral */
+/* Corpo do site */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #111;
-    color: #fff;
+    background: #0d1b2a;
+    color: white;
 }
 
+/* Cabeçalho */
 header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #1a1a1a;
-    border-bottom: 3px solid #444;
+    background: #1f3b4d;
+    border-bottom: 3px solid #2c5371;
 }
 
 header .logo h1 {
-    color: #ff6600;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #f5a623;
 }
 
 header nav ul {
-    list-style-type: none;
     display: flex;
+    list-style-type: none;
 }
 
 header nav ul li {
@@ -36,45 +37,94 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color: #ff6600;
+    color: #f5a623;
     font-size: 1.2rem;
-    transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
-    color: #fff;
-}
-
-/* Estilos para as seções */
-main {
-    padding: 50px;
+/* Seção inicial (Hero) */
+#inicio {
+    background: url('https://source.unsplash.com/1600x900/?space') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 80px 20px;
     text-align: center;
 }
 
-section {
-    display: none;
+#inicio h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
-section h2 {
+#inicio p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Seção de explorar */
+#explore {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#explore h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
-section p {
-    font-size: 1.2rem;
+.cards {
+    display: flex;
+    justify-content: space-around;
 }
 
-section ul {
-    list-style-type: none;
-    margin-top: 20px;
+.card {
+    background: #2c5371;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
 }
 
-section ul li {
-    font-size: 1.2rem;
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
-/* Formulário de contato */
+.card p {
+    font-size: 1rem;
+}
+
+/* Seção sobre */
+#sobre {
+    background: #1f3b4d;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#sobre h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#sobre p {
+    font-size: 1.2rem;
+}
+
+/* Seção de contato */
+#contato {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -85,16 +135,14 @@ form {
 form input, form textarea {
     padding: 10px;
     width: 80%;
-    max-width: 500px;
+    max-width: 600px;
     font-size: 1rem;
-    border: 1px solid #444;
+    border: none;
     border-radius: 5px;
-    background-color: #222;
-    color: white;
 }
 
 form button {
-    background-color: #ff6600;
+    background: #f5a623;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -103,28 +151,16 @@ form button {
 }
 
 form button:hover {
-    background-color: #ff8533;
+    background: #f78e14;
 }
 
 /* Rodapé */
 footer {
+    background: #1f3b4d;
+    color: #f5a623;
     text-align: center;
     padding: 20px;
-    background-color: #1a1a1a;
-    color: #ff6600;
-    position: fixed;
-    width: 100%;
+    position: relative;
     bottom: 0;
-}
-
-/* Animações e transições */
-.hidden {
-    display: none;
-}
-
-@media screen and (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+    width: 100%;
 }
